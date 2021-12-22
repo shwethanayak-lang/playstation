@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Responsive Playstation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+       <div class="header">
+       <img class="logo" src="/Playstation_Img/logo.png" >
+       <nav>
+        <ul id="menuList">
+         <li>Game Controllers</li>
+         <li>VR Accessories</li>
+         <li>Media Remotes</li>
+         <li>Others</li>
+
+        </ul>
+
+       </nav>
+<img class="menu" src="/Playstation_Img/menu.png" onclick="togglemenu()">
+       </div>
+
+       <div class="row">
+           <div class="col-1">
+           <h1>PS4 V2 <br/>Dualshock 4</h1>
+           <p>Wireless Controller for PlayStation 4</p>
+               <h4>(Compatible/Generic)</h4>
+               <h5>$32.50</h5>
+               <button type="button">Buy Now
+                   <img src="/Playstation_Img/arrow.png">
+               </button>
+            </div>
+            <div class="col-2">
+<img src="/Playstation_Img/controller.png" class="controller">
+<div class="color-box"></div>
+            </div> 
+       </div>
+
+       <div class="social-links">
+           <img src="/Playstation_Img/fb.png">
+           <img src="/Playstation_Img/ig.png">
+           <img src="/Playstation_Img/tw.png">
+       </div>
+
+ <script>
+var  menuList=document.getElementById("menuList");
+menuList.style.maxHeight='190px';
+
+     function togglemenu(){
+
+if(menuList.style.maxHeight == "190px"){
+    menuList.style.maxHeight="0px";
+}
+else{
+    menuList.style.maxHeight="190px"; 
+}
+
+     }
+ </script>
+
+        </body>
+
+        </html>
